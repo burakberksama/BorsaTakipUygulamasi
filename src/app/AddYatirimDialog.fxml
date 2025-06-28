@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.*?>
+
+<DialogPane xmlns:fx="http://javafx.com/fxml" fx:controller="app.AddYatirimDialogController">
+    <content>
+        <VBox spacing="10" alignment="CENTER">
+            <Label text="Yeni Yatırım Ekle"/>
+            <TextField fx:id="tfHisseKodu" promptText="Hisse Kodu"/>
+            <TextField fx:id="tfAlisFiyati" promptText="Alış Fiyatı"/>
+            <TextField fx:id="tfAdet" promptText="Adet"/>
+            <DatePicker fx:id="dpAlisTarihi" promptText="Alış Tarihi"/>
+            <TextField fx:id="tfNot" promptText="Not (İsteğe Bağlı)"/>
+            <HBox spacing="10">
+                <Button fx:id="btnEkle" text="Ekle"/>
+                <Button fx:id="btnIptal" text="İptal"/>
+            </HBox>
+        </VBox>
+    </content>
+</DialogPane>

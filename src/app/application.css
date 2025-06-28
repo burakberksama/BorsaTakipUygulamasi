@@ -1,0 +1,29 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-base: #f4f8fc;
+}
+
+.label {
+    -fx-text-fill: #222;
+}
+
+.button {
+    -fx-background-radius: 8px;
+    -fx-font-size: 13px;
+    -fx-background-color: #4e9cff;
+    -fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-background-color: #0060d3;
+}
+
+.table-view {
+    -fx-background-color: #e3eefd;
+    -fx-border-radius: 8px;
+}
+
+.table-row-cell:filled:selected {
+    -fx-background-color: #a4d3fa;
+}

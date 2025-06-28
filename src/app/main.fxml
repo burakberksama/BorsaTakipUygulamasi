@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.*?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="app.MainController">
+    <top>
+        <VBox spacing="4" alignment="CENTER">
+    <Label text="Borsa/Crypto Hesap Takip Uygulaması" style="-fx-font-size: 20px;"/>
+    <Label text="Hisse: 'GARAN', Kripto: 'BTCUSDT', 'BINANCE:ETHUSDT' veya 'ETHUSDT'. Adet: 0.25 gibi ondalıklı gir." style="-fx-font-size: 12px; -fx-text-fill: #444;"/>
+</VBox>
+    </top>
+    <center>
+        <TableView fx:id="yatirimTable">
+            <columns>
+                <TableColumn fx:id="hisseKoduColumn" text="Hisse Kodu" prefWidth="100"/>
+                <TableColumn fx:id="alisFiyatiColumn" text="Alış Fiyatı" prefWidth="80"/>
+                <TableColumn fx:id="adetColumn" text="Adet" prefWidth="60"/>
+                <TableColumn fx:id="alisTarihiColumn" text="Alış Tarihi" prefWidth="90"/>
+                <TableColumn fx:id="notColumn" text="Not" prefWidth="120"/>
+                <TableColumn fx:id="satisFiyatiColumn" text="Satış Fiyatı" prefWidth="90"/>
+        		<TableColumn fx:id="satisTarihiColumn" text="Satış Tarihi" prefWidth="90"/>
+        		<TableColumn fx:id="karZararColumn" text="Kar/Zarar" prefWidth="90"/>
+        		<TableColumn fx:id="kalanAdetColumn" text="Kalan Adet" prefWidth="80"/>
+        		<TableColumn fx:id="guncelFiyatColumn" text="Güncel Fiyat" prefWidth="90"/>
+        		<TableColumn fx:id="potansiyelKarZararColumn" text="Potansiyel K/Z" prefWidth="90"/>
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+    			<VBox spacing="10" alignment="CENTER">
+    			<Label text="Borsa Hesap Takip Uygulaması" style="-fx-font-size: 20px;"/>
+    <Label text="Hisse için: 'GARAN', 'TUPRS' ...  Kripto için: 'BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'BINANCE:BTCUSDT' şeklinde yazınız." style="-fx-font-size: 13px; -fx-text-fill: #444;"/>
+        <Label text="Portföy Kar/Zarar Dağılımı" style="-fx-font-size: 14px;"/>
+        <PieChart fx:id="karZararPieChart" prefWidth="400" prefHeight="200"/>
+        <HBox alignment="CENTER" spacing="18">
+        <!-- İşlem Butonları -->
+        <HBox spacing="6">
+        <Button fx:id="ekleButton" text="➕ Ekle"/>
+        <Button fx:id="guncelleButton" text="🖉  Güncelle"/>
+        <Button fx:id="silButton" text="🗑️Sil"/>
+        <Button fx:id="satisButton" text="💹 Satış Gir"/>
+    </HBox>
+          <Separator orientation="VERTICAL"/>
+    <!-- Fiyat ile İlgili Butonlar -->
+    <HBox spacing="6">
+        <Button fx:id="fiyatGuncelleButton" text="Fiyatları Güncelle"/>
+        <Button fx:id="manualFiyatButton" text="🏷️ Güncel Fiyatı Gir"/>
+    </HBox>   
+         <Separator orientation="VERTICAL"/>
+    <!-- Rapor/Yardım Butonları -->
+    <HBox spacing="6">
+        <Button fx:id="pdfKaydetButton" text="📝 PDF Olarak Kaydet"/>
+        <Button fx:id="satisGecmisiButton" text="Satış Geçmişi"/>
+        <Button fx:id="hakkindaButton" text="❓ Hakkında / Yardım"/>
+    </HBox>   
+         <Separator orientation="VERTICAL"/>
+    <!-- Tema Butonu -->
+    <Button fx:id="temaDegistirButton" text="🌙 Koyu/Aydınlık"/>
+	</HBox>        
+    </VBox>
+    </bottom>
+</BorderPane>

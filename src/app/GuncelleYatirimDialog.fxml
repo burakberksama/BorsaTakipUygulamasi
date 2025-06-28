@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<DialogPane xmlns:fx="http://javafx.com/fxml" fx:controller="app.GuncelleYatirimDialogController">
+    <content>
+        <VBox spacing="10" alignment="CENTER">
+            <Label text="Yatırım Bilgisi Güncelle"/>
+            <TextField fx:id="tfHisseKodu" promptText="Hisse Kodu"/>
+            <TextField fx:id="tfAlisFiyati" promptText="Alış Fiyatı"/>
+            <TextField fx:id="tfAdet" promptText="Adet"/>
+            <DatePicker fx:id="dpAlisTarihi" promptText="Alış Tarihi"/>
+            <TextField fx:id="tfNot" promptText="Not"/>
+            <HBox spacing="10">
+                <Button fx:id="btnGuncelle" text="Güncelle"/>
+                <Button fx:id="btnIptal" text="İptal"/>
+            </HBox>
+        </VBox>
+    </content>
+</DialogPane>

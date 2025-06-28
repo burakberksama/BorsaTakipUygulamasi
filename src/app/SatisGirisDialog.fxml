@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Button?>
+
+<DialogPane xmlns:fx="http://javafx.com/fxml" fx:controller="app.SatisGirisDialogController">
+    <content>
+        <VBox spacing="10" alignment="CENTER">
+            <Label text="Satış İşlemi Ekle"/>
+            <TextField fx:id="tfSatisFiyati" promptText="Satış Fiyatı"/>
+            <TextField fx:id="tfSatisAdet" promptText="Satılan Adet"/>
+            <DatePicker fx:id="dpSatisTarihi" promptText="Satış Tarihi"/>
+            <HBox spacing="10">
+                <Button fx:id="btnKaydet" text="Kaydet"/>
+                <Button fx:id="btnIptal" text="İptal"/>
+            </HBox>
+        </VBox>
+    </content>
+</DialogPane>

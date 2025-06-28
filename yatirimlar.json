@@ -1,0 +1,47 @@
+[
+  {
+    "hisseKodu": "GARAN",
+    "alisFiyati": 19.1,
+    "adet": 100.0,
+    "alisTarihi": "2025-06-04",
+    "not": "",
+    "guncelFiyat": 0.0,
+    "satisFiyati": 22.0,
+    "satisAdet": 50,
+    "satisTarihi": "2025-06-26",
+    "satislar": [
+      {
+        "adet": 50.0,
+        "fiyat": 22.0,
+        "tarih": "2025-06-26"
+      }
+    ]
+  },
+  {
+    "hisseKodu": "BINANCE:BTCUSDT",
+    "alisFiyati": 100000.0,
+    "adet": 1.0,
+    "alisTarihi": "2025-05-29",
+    "not": "",
+    "guncelFiyat": 107035.65,
+    "satislar": []
+  },
+  {
+    "hisseKodu": "ETHUSDT",
+    "alisFiyati": 1000.0,
+    "adet": 0.5,
+    "alisTarihi": "2025-06-06",
+    "not": "Deneme",
+    "guncelFiyat": 2424.89,
+    "satislar": []
+  },
+  {
+    "hisseKodu": "XRPUSDT",
+    "alisFiyati": 1.25,
+    "adet": 10.5,
+    "alisTarihi": "2025-06-11",
+    "not": "",
+    "guncelFiyat": 2.1895,
+    "satislar": []
+  }
+]
